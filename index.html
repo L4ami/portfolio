@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – Développement</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: rgba(255,255,255,0.06);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.70);
+      --line: rgba(255,255,255,0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans";
+      color: var(--text);
+      background: radial-gradient(1200px 600px at 20% 0%, rgba(120,180,255,0.20), transparent 60%),
+                  radial-gradient(900px 500px at 80% 20%, rgba(255,120,200,0.14), transparent 55%),
+                  var(--bg);
+      line-height: 1.5;
+    }
+    a { color: inherit; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px 60px; }
+    header {
+      display: grid;
+      gap: 14px;
+      padding: 18px 0 10px;
+    }
+    .badge {
+      display: inline-flex; gap: 8px; align-items: center;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.04);
+      width: fit-content;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    h1 { margin: 0; font-size: 34px; letter-spacing: -0.02em; }
+    p { margin: 0; color: var(--muted); }
+    .top {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1.2fr 0.8fr;
+      margin-top: 18px;
+    }
+    @media (max-width: 860px) { .top { grid-template-columns: 1fr; } }
+    .panel {
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: 18px;
+      padding: 16px;
+    }
+    .panel h2 { margin: 0 0 10px; font-size: 18px; }
+    .list { display: grid; gap: 10px; }
+    .item { display: flex; gap: 10px; align-items: flex-start; }
+    .dot {
+      width: 10px; height: 10px; border-radius: 999px;
+      margin-top: 6px;
+      background: rgba(255,255,255,0.55);
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .chip {
+      font-size: 13px; color: rgba(255,255,255,0.80);
+      padding: 6px 10px; border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.04);
+    }
+    section { margin-top: 22px; }
+    .grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+    .card {
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: 18px;
+      padding: 16px;
+      display: grid;
+      gap: 10px;
+      min-height: 190px;
+    }
+    .card h3 { margin: 0; font-size: 18px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px; color: var(--muted); font-size: 13px; }
+    .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.05);
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .btn.primary {
+      background: rgba(120,180,255,0.20);
+      border-color: rgba(120,180,255,0.35);
+    }
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="badge">🎯 Objectif : CFC Informaticien – Développement</div>
+      <h1>Portfolio – <span style="opacity:.95">[Ton Prénom Nom]</span></h1>
+      <p>
+        Je suis basé à <strong>[Genève / Nyon]</strong>. J’ai déjà réalisé plusieurs mini-projets en développement web
+        (sites vitrines) et un jeu <strong>Snake</strong>. Je cherche une formation structurée pour progresser et obtenir un CFC.
+      </p>
+    </header>
+
+    <div class="top">
+      <div class="panel">
+        <h2>Ce que je sais faire</h2>
+        <div class="list">
+          <div class="item"><div class="dot"></div><div>Créer des sites vitrines responsives (mise en page, navigation, formulaires).</div></div>
+          <div class="item"><div class="dot"></div><div>Utiliser JavaScript pour l’interactivité (DOM, événements, logique de jeu).</div></div>
+          <div class="item"><div class="dot"></div><div>Organiser un projet, le publier en ligne, et documenter ce que j’ai appris.</div></div>
+        </div>
+        <div class="chips">
+          <div class="chip">HTML</div>
+          <div class="chip">CSS</div>
+          <div class="chip">JavaScript</div>
+          <div class="chip">Git / GitHub</div>
+          <div class="chip">Responsive</div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Contact</h2>
+        <div class="list">
+          <div class="item"><div class="dot"></div><div>Email : <strong>[tonmail@…]</strong></div></div>
+          <div class="item"><div class="dot"></div><div>Téléphone : <strong>[+41 …]</strong></div></div>
+          <div class="item"><div class="dot"></div><div>GitHub : <strong>github.com/[tonpseudo]</strong></div></div>
+        </div>
+        <div class="btns" style="margin-top:12px;">
+          <a class="btn primary" href="https://github.com/[tonpseudo]" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="[lien-cv-pdf]" target="_blank" rel="noreferrer">CV (PDF)</a>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <h2 style="margin:0 0 12px; font-size:20px;">Projets</h2>
+
+      <div class="grid">
+        <!-- PROJET 1 -->
+        <article class="card">
+          <h3>Site vitrine – Coiffeur</h3>
+          <div class="meta">
+            <span>Tech : HTML / CSS / JS</span> • <span>Focus : responsive, UI</span>
+          </div>
+          <p style="color:var(--muted); margin:0;">
+            Site vitrine avec sections (services, prix, galerie), formulaire de contact, et design responsive.
+          </p>
+          <div class="btns">
+            <a class="btn primary" href="[LIEN_DEMO_COIFFEUR]" target="_blank" rel="noreferrer">Voir la démo</a>
+            <a class="btn" href="[LIEN_CODE_COIFFEUR]" target="_blank" rel="noreferrer">Voir le code</a>
+          </div>
+        </article>
+
+        <!-- PROJET 2 -->
+        <article class="card">
+          <h3>Site vitrine – [Nom du projet 2]</h3>
+          <div class="meta">
+            <span>Tech : HTML / CSS</span> • <span>Focus : layout</span>
+          </div>
+          <p style="color:var(--muted); margin:0;">
+            Vitrine simple et propre, travail sur la mise en page (Flex/Grid) et la cohérence visuelle.
+          </p>
+          <div class="btns">
+            <a class="btn primary" href="[LIEN_DEMO_2]" target="_blank" rel="noreferrer">Voir la démo</a>
+            <a class="btn" href="[LIEN_CODE_2]" target="_blank" rel="noreferrer">Voir le code</a>
+          </div>
+        </article>
+
+        <!-- PROJET 3 : SNAKE -->
+        <article class="card">
+          <h3>Jeu – Snake</h3>
+          <div class="meta">
+            <span>Tech : [JavaScript ou Python]</span> • <span>Focus : logique, boucles, collisions</span>
+          </div>
+          <p style="color:var(--muted); margin:0;">
+            Implémentation d’un Snake avec gestion des touches, score, collisions, et vitesse progressive.
+          </p>
+          <div class="btns">
+            <!-- Si Snake en JS, mets une démo. Si Snake en Python, mets une vidéo -->
+            <a class="btn primary" href="[LIEN_DEMO_OU_VIDEO_SNAKE]" target="_blank" rel="noreferrer">Voir la démo / vidéo</a>
+            <a class="btn" href="[LIEN_CODE_SNAKE]" target="_blank" rel="noreferrer">Voir le code</a>
+          </div>
+        </article>
+
+        <!-- PROJET 4 -->
+        <article class="card">
+          <h3>Site vitrine – [Nom du projet 4]</h3>
+          <div class="meta">
+            <span>Tech : HTML / CSS / JS</span> • <span>Focus : interactions</span>
+          </div>
+          <p style="color:var(--muted); margin:0;">
+            Projet orienté interactions (menu, animations simples, validation de formulaire, etc.).
+          </p>
+          <div class="btns">
+            <a class="btn primary" href="[LIEN_DEMO_4]" target="_blank" rel="noreferrer">Voir la démo</a>
+            <a class="btn" href="[LIEN_CODE_4]" target="_blank" rel="noreferrer">Voir le code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <div><strong>Note :</strong> projets publiés en ligne (GitHub Pages / Netlify). Je peux expliquer le code et les choix techniques à l’oral.</div>
+    </footer>
+  </div>
+</body>
+</html>
